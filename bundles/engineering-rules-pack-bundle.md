@@ -32,6 +32,7 @@
 | `16-autonomous-domain-archetypes-scaffolding.md` | Zero-friction scaffolding, 6 domain archetypes, dual-sided architecture, opinionated UI & seed data | Pembuatan proyek/sistem baru secara instan tanpa pertanyaan klise |
 | `17-machine-learning-mlops-engineering-rules.md` | Baseline first, reproducibility, no data leakage, slice evaluation, behavioral tests, drift monitoring | Eksperimen, pelatihan, validasi, dan deployment model Machine Learning |
 | `18-agent-operational-discipline-anti-patterns.md` | Anti-blind mimicry, clean production handoff, strict auth boundaries, CDN cache-busting, feature-first docs | Seluruh siklus interaksi dan eksekusi AI coding assistant |
+| `19-anti-slop-humanized-ui-design-rules.md` | Anti-slop frontend, mobile-first touch ergonomics (44/48px), humanized writing, agent security audit skills | Desain UI/UX web anti-generik, optimalisasi layar handphone, penulisan copy alami, dan audit keamanan |
 
 ## Urutan prioritas
 Untuk membangun standar bertahap, mulai dengan:
@@ -1006,6 +1007,35 @@ Pipeline wajib memvalidasi 6 asersi kualitas: *Uniqueness*, *Completeness*, *Ran
 - **Feature-First Documentation:** Utamakan arsitektur teknis, alur customer, dan kontrak fitur. Jangan buang ruang dokumentasi untuk menjelaskan tabel palet warna kecuali secara eksplisit diminta.
 - **Clean Navbar & Typography:** Hindari angka hardcoded atau counter statis (misal `(120)`) di bilah navigasi utama.
 - **Unboxed Brand Assets:** Sajikan logo dan lambang brand melayang bebas (*free-floating*) tanpa kotak/kartu pembungkus kaku (*card-free*).
+
+---
+
+# Anti-Slop Web Design, Mobile-First Ergonomics, Humanized Writing & Agent Security Audit Rules
+
+**Versi:** 1.0  
+**Peran AI:** Lead Product Designer, Mobile UX Specialist, Application Security Auditor & Meta-Prompt Engineer  
+**Cakupan:** Panduan rekayasa antarmuka web anti-generik (*anti-slop*), ergonomi layar ponsel (*mobile-first*), standar penulisan manusiawi tanpa klise bot (*humanized writing*), serta protokol audit keamanan mandiri (*security audit skills*) untuk AI Coding Assistant.
+
+## 1. Anti-Slop Web Design Manifesto
+- **Banned AI Aesthetics:** Tolak gradien ungu neon acak, 3 kolom kartu identik, border bertumpuk (*nested card borders*), font Inter seragam tanpa hierarki, dan floating blur blobs tanpa arah.
+- **Craftsmanship & Taste:** Gunakan Bento Grid asimetris, token-based design, tipografi kontras berkarakter (*Display font paired with clean Body font*), dan `overflow-x: clip` pada root container untuk mencegah horizontal scrollbar liar pada layar sentuh.
+- **Zero Broken States:** Lengkapi status *Skeleton Loading*, *Empty State* dengan CTA, *Error Boundary*, dan status interaktif (*focus-visible*, *hover*, *active*).
+
+## 2. Mobile-First & Handphone UI/UX Ergonomics
+- **Touch Target Minimum:** Elemen interaktif wajib berukuran minimal 44×44px (iOS HIG) atau 48×48px (Google Material 3).
+- **The Thumb Zone:** Posisikan aksi utama (bottom nav, sticky CTA, floating action button) di 1/3 bagian bawah layar agar ramah navigasi satu tangan.
+- **Bottom Sheet vs Modal:** Ganti modal popup tengah kaku dengan Bottom Sheet swipeable pada layar ponsel (< 768px).
+- **Safe Area Insets:** Selalu sertakan viewport cover dan dukung notch/home bar via `env(safe-area-inset-top)` dan `env(safe-area-inset-bottom)`.
+- **Fluid Typography:** Terapkan CSS `clamp()` untuk heading dan spacing responsif tanpa layout shift (CLS).
+
+## 3. Humanized Writing & Natural Communication
+- **Banned AI Tropes:** Dilarang menggunakan frasa *"delve"*, *"testament to"*, *"in today's fast-paced world"*, *"beacon of innovation"*, atau formula *"not only X but also Y"*.
+- **Authentic Voice:** Tulis teks copy UI dan dokumentasi secara lugas, ringkas, aktif, dan berorientasi pada nilai nyata pengguna.
+
+## 4. Autonomous Security Audit Protocol
+- **4-Phase Audit Workflow:** Jalankan Reconnaissance (surface mapping), Vulnerability Hunting (OWASP Top 10, IDOR, SQLi, XSS, CSRF), Proof Validation, dan Structured Patching sebelum menyatakan tugas selesai.
+- **Verified Tooling Integration:** Mengacu pada `Nutlope/hallmark` (`sloplint`), `blader/humanizer`, `cloudflare/security-audit-skill`, dan `wshobson/agents (responsive-design & mobile-ui)`.
+
 
 
 

@@ -1,8 +1,8 @@
 # Engineering Rules Pack — Production-Ready AI Standards
 
-**Versi:** 2.0  
+**Versi:** 2.1  
 **Bahasa:** Indonesia  
-**Tujuan:** Katalog lengkap 18 aturan rekayasa perangkat lunak (*Engineering Rules*) berstandar industri untuk memandu AI Agent (Cursor, Claude Code, Windsurf, Copilot, Antigravity, dll.) maupun software engineer dalam merancang, mengimplementasikan, mereview, menguji, dan merilis sistem siap produksi.
+**Tujuan:** Katalog lengkap 19 aturan rekayasa perangkat lunak (*Engineering Rules*) berstandar industri untuk memandu AI Agent (Cursor, Claude Code, Windsurf, Copilot, Antigravity, dll.) maupun software engineer dalam merancang, mengimplementasikan, mereview, menguji, dan merilis sistem siap produksi.
 
 ---
 
@@ -10,17 +10,17 @@
 
 1. **Modular & Terarah:** Jangan menyalin seluruh file sekaligus jika tugas Anda kecil. Muat atau sertakan aturan spesifik yang relevan dengan tugas yang sedang dikerjakan.
 2. **Kombinasi Rekomendasi:**
-   - **Frontend UI/UX:** Aturan `01` + `04` + `06` + `18`
+   - **Frontend UI/UX & Mobile:** Aturan `01` + `04` + `06` + `18` + `19`
    - **Backend API & Data:** Aturan `02` + `03` + `04` + `05` + `11`
-   - **Full-Stack Feature:** Aturan `01` + `02` + `03` + `04` + `05` + `06` + `18`
-   - **Refactoring & Code Review:** Aturan `06` + `07` + `12` + `18`
+   - **Full-Stack Feature:** Aturan `01` + `02` + `03` + `04` + `05` + `06` + `18` + `19`
+   - **Refactoring & Code Review:** Aturan `06` + `07` + `12` + `18` + `19`
    - **DevOps, Infra & CI/CD:** Aturan `08` + `09` + `12`
    - **Optimization & Scale:** Aturan `03` + `10` + `09`
-   - **AI Agentic Systems & LLM:** Aturan `12` + `13` + `05` + `18`
+   - **AI Agentic Systems & LLM:** Aturan `12` + `13` + `05` + `18` + `19`
    - **System Architecture & Major Decision:** Aturan `07` + `14` + `11`
    - **Data Engineering & Pipelines:** Aturan `03` + `15` + `09`
    - **Machine Learning & MLOps:** Aturan `15` + `17` + `04` + `06`
-   - **AI Operational Discipline & Clean Handoff:** Aturan `12` + `18` + `06`
+   - **AI Operational Discipline & Clean Handoff:** Aturan `12` + `18` + `19` + `06`
 3. **Hierarki Penegakan:**
    - **WAJIB:** Default *non-negotiable*. Pengecualian hanya sah jika ada persetujuan eksplisit dari lead engineer/owner dan risiko terdokumentasi.
    - **KONDISIONAL:** Berlaku ketika fitur, teknologi, ancaman, atau konteks terkait digunakan dalam proyek.
@@ -29,7 +29,7 @@
 
 ---
 
-## 2. Katalog 18 Engineering Rules
+## 2. Katalog 19 Engineering Rules
 
 | Kode | Nama Dokumen | Fokus Utama | Kapan Digunakan |
 |---|---|---|---|
@@ -51,6 +51,7 @@
 | **16** | [`16-autonomous-domain-archetypes-scaffolding.md`](./16-autonomous-domain-archetypes-scaffolding.md) | Zero-friction scaffolding, 6 domain archetypes, dual-sided architecture, opinionated UI & seed data | Pembuatan proyek/sistem baru secara instan tanpa pertanyaan klise |
 | **17** | [`17-machine-learning-mlops-engineering-rules.md`](./17-machine-learning-mlops-engineering-rules.md) | Simple baseline first, reproducibility, no data leakage, slice evaluation, behavioral tests, drift monitoring | Eksperimen, pelatihan, validasi, dan deployment model Machine Learning |
 | **18** | [`18-agent-operational-discipline-anti-patterns.md`](./18-agent-operational-discipline-anti-patterns.md) | Pencegahan blind mimicry, nol sisa scaffolding demo, proteksi sesi tamu, invalidasi cache CDN GitHub, feature-first docs | Seluruh siklus interaksi AI coding agent dalam implementasi, refactoring, dan dokumentasi |
+| **19** | [`19-anti-slop-humanized-ui-design-rules.md`](./19-anti-slop-humanized-ui-design-rules.md) | Anti-slop frontend, mobile-first touch ergonomics (44/48px), humanized writing (de-AI-ifying), agent security audit skills | Desain UI/UX web anti-generik, optimalisasi layar handphone, penulisan copy alami, dan audit keamanan |
 
 ---
 

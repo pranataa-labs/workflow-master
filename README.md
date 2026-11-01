@@ -43,7 +43,7 @@ workflow-master/
 │   ├── 00-engineering-workflow-ai-coding.md          # 9-stage engineering lifecycle & risk matrix
 │   └── 01-master-prompt-and-workflow-fullstack.md    # Full-Stack master orchestrator prompt
 │
-├── rules/                                            # 18 Modular Rule Packages (Production-Ready)
+├── rules/                                            # 19 Modular Rule Packages (Production-Ready)
 │   ├── README.md                                     # Catalog & rule selection guide
 │   ├── 01-frontend-engineering-rules.md              # UI/UX, Component design, a11y (WCAG 2.2 AA), Core Web Vitals
 │   ├── 02-backend-engineering-rules.md               # Clean architecture, RESTful API, Auth, Boundary control
@@ -62,7 +62,8 @@ workflow-master/
 │   ├── 15-data-engineering-pipeline-governance-rules.md # Medallion architecture, data quality assertions, governance
 │   ├── 16-autonomous-domain-archetypes-scaffolding.md # Zero-friction scaffolding, 6 domain blueprints, seed data
 │   ├── 17-machine-learning-mlops-engineering-rules.md # Baseline first, no data leakage, slice evaluation, drift monitoring
-│   └── 18-agent-operational-discipline-anti-patterns.md # Anti-blind mimicry, clean production, strict auth, cache-busting
+│   ├── 18-agent-operational-discipline-anti-patterns.md # Anti-blind mimicry, clean production, strict auth, cache-busting
+│   └── 19-anti-slop-humanized-ui-design-rules.md     # Anti-slop frontend, mobile ergonomics, humanized writing, security audit skills
 │
 └── templates/                                        # Ready-to-use production scaffolding & AI configurations
     ├── .cursor/rules/                                # Modern modular Cursor AI rules (.mdc)

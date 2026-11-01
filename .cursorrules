@@ -46,3 +46,6 @@ When performing specific tasks, follow the corresponding standards in the `rules
 - Architecture Decisions: `rules/14-architecture-decision-records-adr.md`
 - Data Engineering: `rules/15-data-engineering-pipeline-governance-rules.md`
 - Autonomous Scaffolding: `rules/16-autonomous-domain-archetypes-scaffolding.md`
+- Machine Learning & MLOps: `rules/17-machine-learning-mlops-engineering-rules.md`
+- Agent Operational Discipline: `rules/18-agent-operational-discipline-anti-patterns.md`
+- Anti-Slop & Mobile UX: `rules/19-anti-slop-humanized-ui-design-rules.md`

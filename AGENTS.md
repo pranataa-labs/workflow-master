@@ -33,6 +33,11 @@ Semua pekerjaan rekayasa pada repositori ini WAJIB mematuhi 9 tahapan alur kerja
   - *Permanent Cache-Busting:* Gunakan nama file baru saat memperbarui gambar dokumentasi GitHub agar tidak terjebak cache proxy GitHub Camo.
   - *Feature-First Documentation:* Utamakan kapabilitas teknis dan fitur bisnis; jangan boroskan ruang untuk tabel kode warna.
   - *Unboxed Assets:* Biarkan logo melayang bebas (*card-free*) tanpa bingkai kotak kaku.
+- **Rule 19 — Anti-Slop Web Design, Mobile Ergonomics & Security Audit Skills:**
+  - *Anti-Slop Web Design:* Tolak estetika AI generik (larang gradient ungu-violet acak, 3 kartu seragam, nested card borders, dan font Inter seragam tanpa kontras hierarki). Terapkan bento grid asimetris, token-based design, dan `overflow-x: clip`.
+  - *Mobile-First & Touch Ergonomics:* Terapkan ukuran target sentuh minimal 44×44px (iOS) / 48×48px (Android), optimasi zona jempol bawah (*Thumb Zone*), ganti modal tengah kaku dengan *Bottom Sheet* swipeable pada ponsel, dan pasang safe area insets `env(safe-area-inset-*)`.
+  - *Humanized Copy:* Hindari frasa retorika AI klise (*"delve"*, *"testament to"*, *"in today's fast-paced world"*, formula *"not only X but Y"*); gunakan bahasa lugas, manusiawi, dan autentik.
+  - *Autonomous Security Audit:* Terapkan protokol audit 4-fase (Reconnaissance, Vulnerability Hunting OWASP Top 10, Proof Validation, Structured Patching) sebelum rilis.
 - **Rule 05 — Security Baseline:** Validasi semua input di server, gunakan prepared statements, cegah SQL injection, XSS, dan lindungi kredensial.
 - **Rule 04 — Testing & QA:** Terapkan pola AAA (Arrange-Act-Assert), isolasi test, dan mock external services.
 - **Rule 12 — Git & AI Hygiene:** Buat commit atomik dengan standar Conventional Commits (`feat:`, `fix:`, `refactor:`, `test:`, `docs:`).
