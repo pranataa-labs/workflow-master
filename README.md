@@ -65,7 +65,16 @@ workflow-master/
 │   ├── 18-agent-operational-discipline-anti-patterns.md # Anti-blind mimicry, clean production, strict auth, cache-busting
 │   └── 19-anti-slop-humanized-ui-design-rules.md     # Anti-slop frontend, mobile ergonomics, humanized writing, security audit skills
 │
+├── skills/                                           # Reusable Agent Skills (Universal SKILL.md format)
+│   └── git-commit-craft/                             # Automated Conventional Commits & disciplined Git history
+│       └── SKILL.md                                  # Production Git commit instructions & validation
+│
 └── templates/                                        # Ready-to-use production scaffolding & AI configurations
+    ├── git/                                          # Git discipline templates (commitlint, husky, git-cliff)
+    │   ├── commitlint.config.js                      # Commitlint conventional rule configuration
+    │   ├── git-commit-template.txt                   # Git commit message template with co-author trailer
+    │   ├── cliff.toml                                # Automated changelog generator configuration
+    │   └── setup-git-discipline.ps1                  # 1-Click setup script for repositories
     ├── .cursor/rules/                                # Modern modular Cursor AI rules (.mdc)
     │   ├── frontend.mdc                              # Frontend UI/UX, React, TypeScript, a11y
     │   ├── backend.mdc                               # Backend clean architecture, REST contracts
