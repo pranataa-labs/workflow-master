@@ -39,6 +39,11 @@ Semua pekerjaan rekayasa pada repositori ini WAJIB mematuhi 9 tahapan alur kerja
   - *Humanized Copy:* Hindari frasa retorika AI klise (*"delve"*, *"testament to"*, *"in today's fast-paced world"*, formula *"not only X but Y"*); gunakan bahasa lugas, manusiawi, dan autentik.
   - *Autonomous Security Audit:* Terapkan protokol audit 4-fase (Reconnaissance, Vulnerability Hunting OWASP Top 10, Proof Validation, Structured Patching) sebelum rilis.
 - **Rule 05 — Security Baseline:** Validasi semua input di server, gunakan prepared statements, cegah SQL injection, XSS, dan lindungi kredensial.
+- **Rule 11.1 — Mandatory README Topics & GitHub Metadata Sync:** Pada SETIAP pembuatan atau pembaruan `README.md` di seluruh repositori ekosistem, AI **WAJIB** menyertakan baris tautan topik GitHub tepat di bawah judul/subjudul:
+  ```markdown
+  [`react`](https://github.com/topics/react) • [`typescript`](https://github.com/topics/typescript) • [`tailwind`](https://github.com/topics/tailwind) • [`shadcn-ui`](https://github.com/topics/shadcn-ui)
+  ```
+  Topik dipilih secara kontekstual (5–10 tag) sesuai dependensi riil dan domain proyek. Selain itu, AI **WAJIB** otomatis menyelaraskan metadata topik ke repositori GitHub menggunakan `gh repo edit <owner>/<repo> --add-topic <tags>`. DILARANG membuat atau memperbarui README tanpa baris topik ini.
 - **Rule 04 — Testing & QA:** Terapkan pola AAA (Arrange-Act-Assert), isolasi test, dan mock external services.
 - **Rule 12 — Git & AI Hygiene:** Buat commit atomik dengan standar Conventional Commits (`feat:`, `fix:`, `refactor:`, `test:`, `docs:`).
 - **Rule 12.1 — Dual-Account Co-Authorship & Pairing (Otomatis Tanpa Perintah):** Pada SETIAP commit Git di seluruh repositori ekosistem, AI WAJIB menyertakan trailer co-author akun kedua secara otomatis dan mandiri, TANPA perlu diminta atau diperintahkan lagi oleh pengguna:

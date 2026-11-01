@@ -24,6 +24,18 @@ README proyek harus menjelaskan sesuai kebutuhan:
 - link ke API docs, architecture decisions, runbooks, dan contribution guide.
 **WAJIB:** perintah yang didokumentasikan harus diverifikasi atau diberi label belum diverifikasi.
 
+### 2.1 Mandatory GitHub Repository Topics & README Header Tags
+- **WAJIB:** Pada SETIAP pembuatan atau pembaruan `README.md` repositori baru maupun lama di ekosistem, AI **WAJIB** menyertakan baris tautan topik GitHub (*repository topics pills*) tepat di bawah tajuk utama (`# Judul`) dan subjudul deskriptif.
+- **Format Markdown Wajib:** Gunakan format tautan inline kode yang mengarah ke `https://github.com/topics/<topic>` yang dipisahkan oleh bullet `•` atau titik pemisah:
+  ```markdown
+  [`react`](https://github.com/topics/react) • [`typescript`](https://github.com/topics/typescript) • [`tailwind`](https://github.com/topics/tailwind) • [`shadcn-ui`](https://github.com/topics/shadcn-ui) • [`portfolio`](https://github.com/topics/portfolio) • [`developer-portfolio`](https://github.com/topics/developer-portfolio)
+  ```
+- **Sintesis Konteks & Relevansi:** Topik harus dipilih secara kontekstual (5–10 tag) yang mencerminkan dependensi riil (`package.json`, `composer.json`, `requirements.txt`), domain bisnis, dan teknologi utama proyek. Dilarang meniru mentah tanpa relevansi (*Rule 18 Anti-Blind-Mimicry*).
+- **Otomasi GitHub CLI Sync:** Saat menginisialisasi atau mempublikasikan repositori ke GitHub, AI **WAJIB** otomatis menyelaraskan topik ke metadata repositori GitHub menggunakan perintah:
+  ```bash
+  gh repo edit <owner>/<repo> --add-topic <tag1>,<tag2>,<tag3>,...
+  ```
+
 ## 3. Configuration reference
 - **WAJIB:** dokumentasikan nama config, fungsi, apakah required, default aman, format, dan environment yang menggunakannya.
 - **WAJIB:** jangan menyimpan nilai secret aktual di README, example files, issue, atau sample config.
@@ -77,6 +89,7 @@ Jangan membuat ADR untuk keputusan remeh yang jelas dari konvensi proyek.
 
 ## 9. Definition of Done
 - [ ] README/setup/config docs diperbarui bila terpengaruh.
+- [ ] Baris topik repositori GitHub (`[`topic`](https://github.com/topics/topic)`) tercantum di bawah header README dan disinkronkan ke GitHub repo topics.
 - [ ] API/event contracts selaras dengan implementasi dan tests.
 - [ ] Breaking changes, deprecation, dan migration path dijelaskan.
 - [ ] Contoh tidak mengandung secret/data sensitif dan dapat diverifikasi.

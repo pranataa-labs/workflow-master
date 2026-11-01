@@ -25,9 +25,25 @@ Semua pekerjaan rekayasa pada repositori ini WAJIB mematuhi 9 tahapan alur kerja
   - Bangun arsitektur dua sisi (*Dual-Sided*: Customer Flow + Admin Backoffice dengan rute terproteksi/diobfuskasi).
   - Terapkan sistem desain modern (*Smooth Blue & Slate* / slate-oklch, font *Inter* atau *Plus Jakarta Sans*, UI responsif ala *Shadcn*).
   - Sertakan data awal realistis (*seed data*) 6–12 item domain lengkap dengan gambar sampul dan akun demo siap pakai (`admin@example.com` / `password123` dan `user@example.com` / `password123`).
-- **Rule 18 — AI Operational Discipline & Anti-Amnesia:** Pencegahan blind mimicry, nol sisa scaffolding demo, proteksi sesi tamu, invalidasi cache CDN GitHub, feature-first docs, dan unboxed brand assets.
-- **Rule 19 — Anti-Slop Web Design, Mobile Ergonomics & Security Audit Skills:** Tolak estetika AI generik (larang gradient ungu acak, 3 kartu seragam, nested card borders), terapkan mobile touch targets 44/48px & thumb zone, hapus retorika AI klise (de-AI-ifying), dan jalankan audit keamanan 4-fase OWASP Top 10.
+- **Rule 17 — Machine Learning & MLOps:** Terapkan *Simple Baseline First*, kunci random seed global untuk reproduktifitas, cegah *Data Leakage* dengan `Pipeline` terpadu, lakukan *Slice Analysis*, dan lindungi inferensi runtime.
+- **Rule 18 — AI Operational Discipline & Anti-Amnesia:**
+  - *Contextual Synthesis over Blind Mimicry:* Jangan menyalin teks/topik referensi eksternal secara buta; sesuaikan dengan manifest aktual proyek (`package.json`, dll.).
+  - *Clean Production Handoff:* Bersihkan seluruh bypass demo dan form pre-filled sebelum menyerahkan UI produksi.
+  - *Strict Auth & Session Boundaries:* Kunci aksi tamu vs member (keranjang, checkout) dan sembunyikan elemen UI khusus member bagi tamu.
+  - *Permanent Cache-Busting:* Gunakan nama file baru saat memperbarui gambar dokumentasi GitHub agar tidak terjebak cache proxy GitHub Camo.
+  - *Feature-First Documentation:* Utamakan kapabilitas teknis dan fitur bisnis; jangan boroskan ruang untuk tabel kode warna.
+  - *Unboxed Assets:* Biarkan logo melayang bebas (*card-free*) tanpa bingkai kotak kaku.
+- **Rule 19 — Anti-Slop Web Design, Mobile Ergonomics & Security Audit Skills:**
+  - *Anti-Slop Web Design:* Tolak estetika AI generik (larang gradient ungu-violet acak, 3 kartu seragam, nested card borders, dan font Inter seragam tanpa kontras hierarki). Terapkan bento grid asimetris, token-based design, dan `overflow-x: clip`.
+  - *Mobile-First & Touch Ergonomics:* Terapkan ukuran target sentuh minimal 44×44px (iOS) / 48×48px (Android), optimasi zona jempol bawah (*Thumb Zone*), ganti modal tengah kaku dengan *Bottom Sheet* swipeable pada ponsel, dan pasang safe area insets `env(safe-area-inset-*)`.
+  - *Humanized Copy:* Hindari frasa retorika AI klise (*"delve"*, *"testament to"*, *"in today's fast-paced world"*, formula *"not only X but Y"*); gunakan bahasa lugas, manusiawi, dan autentik.
+  - *Autonomous Security Audit:* Terapkan protokol audit 4-fase (Reconnaissance, Vulnerability Hunting OWASP Top 10, Proof Validation, Structured Patching) sebelum rilis.
 - **Rule 05 — Security Baseline:** Validasi semua input di server, gunakan prepared statements, cegah SQL injection, XSS, dan lindungi kredensial.
+- **Rule 11.1 — Mandatory README Topics & GitHub Metadata Sync:** Pada SETIAP pembuatan atau pembaruan `README.md` di seluruh repositori ekosistem, AI **WAJIB** menyertakan baris tautan topik GitHub tepat di bawah judul/subjudul:
+  ```markdown
+  [`react`](https://github.com/topics/react) • [`typescript`](https://github.com/topics/typescript) • [`tailwind`](https://github.com/topics/tailwind) • [`shadcn-ui`](https://github.com/topics/shadcn-ui)
+  ```
+  Topik dipilih secara kontekstual (5–10 tag) sesuai dependensi riil dan domain proyek. Selain itu, AI **WAJIB** otomatis menyelaraskan metadata topik ke repositori GitHub menggunakan `gh repo edit <owner>/<repo> --add-topic <tags>`. DILARANG membuat atau memperbarui README tanpa baris topik ini.
 - **Rule 04 — Testing & QA:** Terapkan pola AAA (Arrange-Act-Assert), isolasi test, dan mock external services.
 - **Rule 12 — Git & AI Hygiene:** Buat commit atomik dengan standar Conventional Commits (`feat:`, `fix:`, `refactor:`, `test:`, `docs:`).
 - **Rule 12.1 — Dual-Account Co-Authorship & Pairing (Otomatis Tanpa Perintah):** Pada SETIAP commit Git di seluruh repositori ekosistem, AI WAJIB menyertakan trailer co-author akun kedua secara otomatis dan mandiri, TANPA perlu diminta atau diperintahkan lagi oleh pengguna:

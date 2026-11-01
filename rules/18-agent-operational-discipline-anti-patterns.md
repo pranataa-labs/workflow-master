@@ -19,6 +19,8 @@
    AI **WAJIB** memahami mekanisme caching CDN (termasuk GitHub Camo Image Proxy). Dilarang menimpa file gambar di lokasi yang sama jika ingin perubahan langsung terlihat di web publik.
 5. **Feature-First, Spec-Driven Documentation:**  
    Dokumentasi teknis harus mengutamakan fitur, fungsionalitas, arsitektur, dan kontrak API. Dilarang menghabiskan ruang dengan tabel kode warna atau ornamen estetika kecuali diminta secara spesifik oleh pengguna.
+6. **Mandatory Repository Topics & README Header Pill Tags:**  
+   AI **DILARANG LUPA** mencantumkan baris topik repositori saat menyusun atau memperbarui `README.md`. AI **WAJIB** menyertakan 5–10 tautan topik GitHub (`[`tag`](https://github.com/topics/tag)`) tepat di bawah judul/subjudul utama README dan menyinkronkannya ke GitHub metadata via `gh repo edit --add-topic <tags>`.
 
 ---
 
@@ -90,6 +92,7 @@ Sebelum AI mengirimkan laporan akhir ke pengguna pada setiap iterasi tugas, AI *
 - [ ] **3. Auth & Session Guard:** Apakah batasan tamu (*guest*) vs member (*authenticated*) sudah ditegakkan pada tombol beli, keranjang, dan visibilitas ikon?
 - [ ] **4. CDN Cache Invalidation:** Jika ada pembaruan gambar/screenshot untuk GitHub README, apakah nama file sudah dibedakan agar tidak terjebak cache proxy GitHub Camo?
 - [ ] **5. Feature-First Focus:** Apakah dokumentasi menjelaskan fitur, kapabilitas teknis, dan arsitektur, tanpa membuang ruang untuk menjelaskan tabel warna?
-- [ ] **6. Clean Navbar:** Apakah navigasi bebas dari angka hardcoded atau label statis yang mengotori tampilan?
-- [ ] **7. Unboxed Asset:** Apakah logo dan lambang brand disajikan secara elegan tanpa kotak kartu pembungkus yang kaku?
-- [ ] **8. Automated Verification:** Apakah `pnpm test` (atau test suite proyek) telah dijalankan dan dilaporkan dengan bukti output nyata?
+- [ ] **6. Mandatory README Topics:** Apakah baris topik GitHub (`[`tag`](https://github.com/topics/tag)`) sudah terpasang di bawah header README dan disinkronkan ke metadata repositori GitHub?
+- [ ] **7. Clean Navbar:** Apakah navigasi bebas dari angka hardcoded atau label statis yang mengotori tampilan?
+- [ ] **8. Unboxed Asset:** Apakah logo dan lambang brand disajikan secara elegan tanpa kotak kartu pembungkus yang kaku?
+- [ ] **9. Automated Verification:** Apakah `pnpm test` (atau test suite proyek) telah dijalankan dan dilaporkan dengan bukti output nyata?
