@@ -1,7 +1,7 @@
 # Setup Git Discipline, Conventional Commits & Husky in the current repository
 # Usage: ./setup-git-discipline.ps1
 
-Write-Host "🔧 Memasang Standar Git Discipline & Conventional Commits..." -ForegroundColor Cyan
+Write-Host "🔧 Memasang Standar Git Discipline dan Conventional Commits..." -ForegroundColor Cyan
 
 # 1. Setup Git Commit Template
 if (Test-Path ".git") {
