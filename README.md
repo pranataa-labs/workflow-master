@@ -15,6 +15,16 @@
 
 </div>
 
+---
+
+## Pratinjau Sistem & Disiplin Rekayasa
+
+<p align="center">
+  <img src="docs/images/workflow-master-preview.png" alt="Workflow Master CLI & 9-Stage AI Governance Framework Preview" width="920">
+</p>
+
+---
+
 ## 📌 Why Workflow Master Is Essential
 
 Modern AI models (such as Claude 3.7 Sonnet, Gemini 2.5 Flash/Pro, and GPT-4o) generate code at unprecedented speeds. However, without rigorous architectural boundaries, AI agents frequently:
