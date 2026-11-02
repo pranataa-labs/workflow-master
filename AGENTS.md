@@ -38,6 +38,10 @@ Semua pekerjaan rekayasa pada repositori ini WAJIB mematuhi 9 tahapan alur kerja
   - *Mobile-First & Touch Ergonomics:* Terapkan ukuran target sentuh minimal 44×44px (iOS) / 48×48px (Android), optimasi zona jempol bawah (*Thumb Zone*), ganti modal tengah kaku dengan *Bottom Sheet* swipeable pada ponsel, dan pasang safe area insets `env(safe-area-inset-*)`.
   - *Humanized Copy:* Hindari frasa retorika AI klise (*"delve"*, *"testament to"*, *"in today's fast-paced world"*, formula *"not only X but Y"*); gunakan bahasa lugas, manusiawi, dan autentik.
   - *Autonomous Security Audit:* Terapkan protokol audit 4-fase (Reconnaissance, Vulnerability Hunting OWASP Top 10, Proof Validation, Structured Patching) sebelum rilis.
+- **Rule 20 — Concise Code, Clean Logs & Professional Documentation Discipline:**
+  - *Anti-Emoji Clutter:* DILARANG menyematkan emoji secara serampangan atau berulang-ulang pada pemanggilan log/print (`print()`, `console.log()`, `Log::info()`, `logger`), komentar kode (`#`, `//`, `/* */`), subjudul/heading dokumentasi `README.md`, dan commit messages. Gunakan teks tag log formal (`[INFO]`, `[SUCCESS]`, `[WARN]`, `[ERROR]`).
+  - *Kata Baku & Lugas (PUEBI/KBBI):* Wajib menggunakan bahasa baku resmi (atau Technical English formal). Hindari bahasa pergaulan, singkatan santai (*yg, tdk, utk, kyk*), dan frasa retorika AI klise.
+  - *Singkat, Padat & Berbobot:* Tulis komentar kode hanya untuk menjelaskan alasan arsitektural (*why*), bukan mengulang sintaks (*what*). Buat dokumentasi README langsung ke inti masalah (*to-the-point*), instruksi instalasi langsung dapat disalin, dan hilangkan basa-basi panjang.
 - **Rule 05 — Security Baseline:** Validasi semua input di server, gunakan prepared statements, cegah SQL injection, XSS, dan lindungi kredensial.
 - **Rule 11.1 — Mandatory README Topics & GitHub Metadata Sync:** Pada SETIAP pembuatan atau pembaruan `README.md` di seluruh repositori ekosistem, AI **WAJIB** menyertakan baris tautan topik GitHub tepat di bawah judul/subjudul:
   ```markdown

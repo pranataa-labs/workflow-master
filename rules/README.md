@@ -29,7 +29,7 @@
 
 ---
 
-## 2. Katalog 19 Engineering Rules
+## 2. Katalog 20 Engineering Rules
 
 | Kode | Nama Dokumen | Fokus Utama | Kapan Digunakan |
 |---|---|---|---|
@@ -52,6 +52,7 @@
 | **17** | [`17-machine-learning-mlops-engineering-rules.md`](./17-machine-learning-mlops-engineering-rules.md) | Simple baseline first, reproducibility, no data leakage, slice evaluation, behavioral tests, drift monitoring | Eksperimen, pelatihan, validasi, dan deployment model Machine Learning |
 | **18** | [`18-agent-operational-discipline-anti-patterns.md`](./18-agent-operational-discipline-anti-patterns.md) | Pencegahan blind mimicry, nol sisa scaffolding demo, proteksi sesi tamu, invalidasi cache CDN GitHub, feature-first docs | Seluruh siklus interaksi AI coding agent dalam implementasi, refactoring, dan dokumentasi |
 | **19** | [`19-anti-slop-humanized-ui-design-rules.md`](./19-anti-slop-humanized-ui-design-rules.md) | Anti-slop frontend, mobile-first touch ergonomics (44/48px), humanized writing (de-AI-ifying), agent security audit skills | Desain UI/UX web anti-generik, optimalisasi layar handphone, penulisan copy alami, dan audit keamanan |
+| **20** | [`20-concise-code-clean-logs-and-docs-rules.md`](./20-concise-code-clean-logs-and-docs-rules.md) | Anti-emoji clutter, formal standard language (kata baku), concise code comments, high signal-to-noise docs | Penulisan kode, log terminal print(), komentar, dan dokumentasi README |
 
 ---
 
